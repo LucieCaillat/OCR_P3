@@ -1,7 +1,53 @@
-h1 {
-  color: #FF79DA;
-  background-color: #99E2D0;
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Roboto", sans-serif;
-  font-size: 200px;
-  font-family: "Shrikhand", cursive;
+  /*font-family: 'Shrikhand', cursive;*/
+  font-size: 18px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 40%;
+  margin: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+}
+.location p {
+  margin: 15px;
+}
+
+.presentation {
+  text-align: center;
+  background-color: #f3f3f3;
+  margin: 0px;
+  padding: 10%;
+}
+.presentation h1 {
+  margin: 0;
+}
+
+button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px gray;
 }/*# sourceMappingURL=main.css.map */

@@ -5,11 +5,40 @@
  @import "./base/base";
 
 
+header{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 40%;
+    margin: 20px;
+  }
+}
 
- h1{
-  color: $color-secondary;
-  background-color: $color-tertiary;
-  font-family: 'Roboto', sans-serif;
-  font-size: 200px;
-  font-family: 'Shrikhand', cursive;
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background-dark;
+  p{
+    margin: 15px;
+  }
+}
+
+.presentation{
+  text-align: center;
+  background-color: $color-background-light;
+  margin: 0px;
+  padding: 10%;
+  h1{
+    margin: 0;
+  }
+}
+
+button{
+  background: linear-gradient($color-secondary, $color-primary);
+  color: $color-white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px gray;
 }
