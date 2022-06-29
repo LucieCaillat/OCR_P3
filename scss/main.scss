@@ -1,0 +1,15 @@
+ @import "./utils/variables";
+ @import "./utils/fonctions";
+ @import "./utils/mixins";
+
+ @import "./base/base";
+
+
+
+ h1{
+  color: $color-secondary;
+  background-color: $color-tertiary;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200px;
+  font-family: 'Shrikhand', cursive;
+}
