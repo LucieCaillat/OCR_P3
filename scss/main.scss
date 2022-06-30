@@ -20,8 +20,9 @@ header{
   justify-content: center;
   align-items: center;
   background-color: $color-background-dark;
+  @include text-size(test);
   p{
-    margin: 15px;
+    margin: 15px;    
   }
 }
 

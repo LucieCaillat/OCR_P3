@@ -7,6 +7,10 @@ body {
   /*font-family: 'Shrikhand', cursive;*/
   font-size: 18px;
   font-weight: 300;
+  @include desktop-only{
+    width: 50%;
+    margin: auto;
+  }
 }
 a {
   text-decoration: none;

@@ -1,0 +1,17 @@
+@mixin desktop-only {
+  @media screen and (min-width: 992px){
+    @content;  
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px){
+    @content;  
+  }
+}
+
+@mixin text-size($type-size) {
+  $type: map-get($text-size, $type-size);
+  font-size: map-get($type, font-size);
+  font-weight: map-get($type, font-weight);  
+}

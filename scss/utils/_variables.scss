@@ -4,3 +4,10 @@ $color-tertiary: #99E2D0;
 $color-white: #ffff;
 $color-background-dark: #e6e6e6;
 $color-background-light: lighten($color-background-dark, 5%);
+
+$text-size: (
+  test: (
+    font-size: 20px,
+    font-weight: 300
+  )
+);
