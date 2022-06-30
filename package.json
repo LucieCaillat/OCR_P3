@@ -1,0 +1,20 @@
+{
+  "name": "caillat_lucie_1_code_062022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss ./css/main.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucieCaillat/OCR_P3.git"
+  },
+  "author": "Lucie C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucieCaillat/OCR_P3/issues"
+  },
+  "homepage": "https://github.com/LucieCaillat/OCR_P3#readme",
+  "devDependencies": { "sass": "^1.45.2" }
+}

@@ -20,6 +20,7 @@ header {
 }
 header img {
   width: 40%;
+  max-width: 392px;
   margin: 20px;
 }
 
