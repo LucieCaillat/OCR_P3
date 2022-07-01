@@ -5,9 +5,29 @@ $color-white: #ffff;
 $color-background-dark: #e6e6e6;
 $color-background-light: lighten($color-background-dark, 5%);
 
-$text-size: (
-  test: (
+$text-size: ( 
+  location: (
+    font-size: 16px,
+    font-weight: 400
+  ),
+  home-title: (
+    font-size: 24px,
+    font-weight: 700
+  ),
+  subtitle: (
+    font-size: 18px,
+    font-weight: 300
+  ),
+  btn: (
+    font-size: 16px,
+    font-weight: 500
+  ),
+  functioning-card: (
     font-size: 20px,
     font-weight: 300
-  )
+  ),
+  restaurant-card__title: (
+    font-size: 20px,
+    font-weight: 300
+  ),
 );
