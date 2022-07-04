@@ -6,6 +6,7 @@ $color-background-dark: #e6e6e6;
 $color-background-light: lighten($color-background-dark, 5%);
 
 $functioning-card__nbr-size_circle: 23px;
+$card-border-radius: 20px;
 
 $text-size: ( 
   location: (
@@ -25,9 +26,17 @@ $text-size: (
     font-weight: 500
   ),
   restaurant-card__title: (
-    font-size: 20px,
+    font-size: 18px,
+    font-weight: 700
+  ),
+  restaurant-card__subtitle: (
+    font-size: 17px,
     font-weight: 300
   ),
+  new-tag: (
+    font-size: 14px,
+    font-weight: 500
+  )
 );
 
 
