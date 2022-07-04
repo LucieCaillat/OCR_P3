@@ -5,7 +5,7 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) and (max-width:992px){
     @content;  
   }
 }
@@ -14,4 +14,10 @@
   $type: map-get($text-size, $type-size);
   font-size: map-get($type, font-size);
   font-weight: map-get($type, font-weight);  
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
