@@ -7,14 +7,19 @@
 
 
 header{
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   box-shadow: 0px 50px 20px black;
   z-index: 2;   
   img{
     width: 40%;
     max-width: 392px;
     margin: 20px;
+  }
+  i{
+    color: $color-dark;
+    font-size: 22px;
+    position: relative;
+    right: 300%;
   }
 }
 
@@ -65,13 +70,110 @@ footer{
     }
   }
 }
+.card{
+  @include shadow;
+  border-radius: $card-border-radius;
+}
 
 .cover{
   width: 100%;
   object-fit: cover;
 }
-main{
-  height: 500px;
-  background-color: red;
-  border-radius: 35px 35px 0 0;
+
+.menu{  
+  background-color: $color-background-light;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -60px;
+  padding: $padding-main;
+  h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    i{
+      margin-right: 5%;
+    }
+  }
+  h2{
+    @include text-size(menu-title);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    margin-top: 30px;
+  }
+  &__underline-title{
+    background-color: $color-tertiary;
+    width: 10%;
+    max-width: 60px;
+    height: 3px;
+  }
+  button{
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 30px;
+  }  
+}
+
+.menu-card{    
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  background-color: $color-white;
+  cursor: pointer;
+  &__text-box{
+    width: 100%;
+    border-radius: $card-border-radius;      
+    padding: 4%;
+    &:hover + .menu-card__validation-box{
+      width: 30%;
+      i{
+        display: flex
+      }
+    }    
+  }
+  h3{
+    @include text-size(menu-card__title);
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  p{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    @include text-size(menu-card__subtitle);
+  }
+  &__price{
+    @include text-size(menu-card__price);
+    margin-right: 10px;
+  }
+  &__subtitle{
+    white-space:nowrap;
+    text-overflow: " [...]";    
+  }
+  &__validation-box{
+    @include flex-center;
+    width: 0%;
+    background-color: $color-tertiary;
+    border-radius: 0 $card-border-radius $card-border-radius 0;
+    
+    i{
+      @include flex-center;
+      background-color: $color-white;
+      color: $color-tertiary;
+      font-size: 15px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      display: none;
+    }
+  }      
+  @include tablet{
+    width: $width-main-for-tablet;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include desktop-only{
+    min-width: $min-width-main-for-desktop;
+  }
 }

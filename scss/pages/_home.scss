@@ -35,11 +35,9 @@
     @include flex-center;
     position: relative;
     width: 90%;
-    height: 65px;
-    border-radius: 20px;
+    height: 65px;    
     margin: 30px auto;
-    background-color: $color-background-light;
-    @include shadow;    
+    background-color: $color-background-light;      
     &__nbr{
       position: absolute;
       left: -7px;
@@ -76,10 +74,8 @@
   }
   &-card{
     display: block;
-    position: relative;
-    border-radius: $card-border-radius;
-    margin: 50px 0;
-    @include shadow;
+    position: relative;    
+    margin: 50px 0;    
     height: 250px;    
     img{
       object-fit: cover;
