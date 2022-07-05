@@ -54,10 +54,10 @@ button{
 }
 
 .functioning{
-  padding: 1% 20px;
+  padding: $padding-main;
   h2{
     @include text-size(home-title);
-    margin: 40px 0;
+    margin: 5px 0;
   }
   &-card{
     @include text-size(btn);
@@ -89,13 +89,16 @@ button{
       color: gray;
     }
     @include tablet{
-      width: 70%;
+      width: $width-main-for-tablet;
+    }
+    @include desktop-only{
+      min-width: $min-width-main-for-desktop;
     }
   }
 }
 
 .restaurant{
-  padding: 1% 20px;
+  padding: $padding-main;
   background-color: $color-background-light;
   h2{
     @include text-size(home-title);
@@ -143,6 +146,13 @@ button{
       @include text-size(new-tag);
       padding: 6px 10px;
       border-radius: 2px;
+    }
+    @include tablet{
+      width: $width-main-for-tablet;
+      margin: 50px auto;
+    }
+    @include desktop-only{
+      min-width: $min-width-main-for-desktop;
     }
   }
 }

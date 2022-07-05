@@ -1,3 +1,9 @@
+/*COLORS*/
+/*TEXT SIZE*/
+/*HOME PAGE*/
+/*MAIN*/
+/*CARD*/
+/*RESPONCIVE*/
 * {
   box-sizing: border-box;
 }
@@ -75,12 +81,12 @@ button {
 }
 
 .functioning {
-  padding: 1% 20px;
+  padding: 30px 5%;
 }
 .functioning h2 {
   font-size: 24px;
   font-weight: 700;
-  margin: 40px 0;
+  margin: 5px 0;
 }
 .functioning-card {
   font-size: 16px;
@@ -115,14 +121,19 @@ button {
   font-size: 19px;
   color: gray;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .functioning-card {
     width: 70%;
   }
 }
+@media screen and (min-width: 992px) {
+  .functioning-card {
+    min-width: 450px;
+  }
+}
 
 .restaurant {
-  padding: 1% 20px;
+  padding: 30px 5%;
   background-color: #f3f3f3;
 }
 .restaurant h2 {
@@ -176,6 +187,17 @@ button {
   font-weight: 500;
   padding: 6px 10px;
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant-card {
+    min-width: 450px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

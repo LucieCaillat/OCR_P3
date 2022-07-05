@@ -1,3 +1,5 @@
+/*COLORS*/
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -5,8 +7,7 @@ $color-white: #ffff;
 $color-background-dark: #e6e6e6;
 $color-background-light: lighten($color-background-dark, 5%);
 
-$functioning-card__nbr-size_circle: 23px;
-$card-border-radius: 20px;
+/*TEXT SIZE*/
 
 $text-size: ( 
   location: (
@@ -38,5 +39,25 @@ $text-size: (
     font-weight: 500
   )
 );
+
+/*HOME PAGE*/
+
+$functioning-card__nbr-size_circle: 23px;
+
+/*MAIN*/
+
+$padding-main: 30px 5% ;
+
+/*CARD*/
+
+$card-border-radius: 20px;
+
+/*RESPONCIVE*/
+
+$width-main-for-tablet: 70%;
+$min-width-main-for-desktop: 450px;
+
+
+
 
 
