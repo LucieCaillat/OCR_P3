@@ -4,8 +4,9 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-white: #ffff;
-$color-background-dark: #e6e6e6;
-$color-background-light: lighten($color-background-dark, 5%);
+$color-dark: #353535;
+$color-background-dark: #eaeaea;
+$color-background-light: #f6f6f6;
 
 /*TEXT SIZE*/
 
@@ -36,6 +37,10 @@ $text-size: (
   ),
   new-tag: (
     font-size: 14px,
+    font-weight: 500
+  ),
+  footer: (
+    font-size: 16px,
     font-weight: 500
   )
 );
