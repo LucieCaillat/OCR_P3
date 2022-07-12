@@ -199,6 +199,7 @@ button {
   font-weight: 500;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  cursor: pointer;
   border: none;
   padding: 16px 20px;
   border-radius: 30px;
@@ -256,7 +257,7 @@ footer a {
 }
 
 .menu {
-  background-color: red;
+  background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -60px;
@@ -293,13 +294,15 @@ footer a {
 
 .menu-card {
   display: flex;
-  justify-content: space-between;
   margin: 15px 0;
   background-color: white;
   cursor: pointer;
 }
 .menu-card__text-box {
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
   border-radius: 20px;
   padding: 4%;
 }
@@ -307,7 +310,7 @@ footer a {
   width: 30%;
 }
 .menu-card__text-box:hover + .menu-card__validation-box i {
-  display: flex;
+  transform: rotate(360deg);
 }
 .menu-card h3 {
   font-size: 18px;
@@ -315,22 +318,19 @@ footer a {
   margin: 0;
   margin-bottom: 5px;
 }
-.menu-card p {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 300;
-}
 .menu-card__price {
   font-size: 15px;
   font-weight: 500;
-  margin-right: 10px;
+  margin: 0 20px;
 }
 .menu-card__subtitle {
-  white-space: nowrap;
-  text-overflow: " [...]";
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  /*
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: "...";*/
 }
 .menu-card__validation-box {
   display: flex;
@@ -339,6 +339,8 @@ footer a {
   width: 0%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  transition: width 450ms;
 }
 .menu-card__validation-box i {
   display: flex;
@@ -350,7 +352,8 @@ footer a {
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  display: none;
+  transform: rotate(0deg);
+  transition: transforme 450ms;
 }
 @media screen and (min-width: 768px) {
   .menu-card {
@@ -363,6 +366,15 @@ footer a {
   .menu-card {
     min-width: 450px;
   }
+}
+
+.checkbox input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.checkbox input:checked + label > .card > .menu-card__validation-box {
+  width: 30%;
 }
 
 /*# sourceMappingURL=main.css.map */
