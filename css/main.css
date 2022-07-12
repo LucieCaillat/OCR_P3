@@ -26,6 +26,11 @@ a {
   color: #000;
 }
 
+.header-shadow {
+  height: 5px;
+  background: linear-gradient(#c4c4c4, #eaeaea);
+}
+
 .location {
   font-size: 16px;
   font-weight: 400;
@@ -33,7 +38,6 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
-  padding: 2px;
 }
 .location p {
   margin: 15px;
@@ -177,13 +181,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 50px 20px black;
-  z-index: 2;
 }
 header img {
   width: 40%;
   max-width: 392px;
-  margin: 20px;
+  margin: 19px;
 }
 header i {
   color: #353535;
@@ -254,7 +256,7 @@ footer a {
 }
 
 .menu {
-  background-color: #f6f6f6;
+  background-color: red;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -60px;
@@ -328,6 +330,7 @@ footer a {
 .menu-card__subtitle {
   white-space: nowrap;
   text-overflow: " [...]";
+  overflow: hidden;
 }
 .menu-card__validation-box {
   display: flex;

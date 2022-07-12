@@ -1,19 +1,15 @@
  @import "./utils/variables";
- @import "./utils/fonctions";
  @import "./utils/mixins";
-
  @import "./base/base";
  @import "./pages/home";
 
 
 header{
-  @include flex-center;
-  box-shadow: 0px 50px 20px black;
-  z-index: 2;   
+  @include flex-center;   
   img{
     width: 40%;
     max-width: 392px;
-    margin: 20px;
+    margin: 19px;
   }
   i{
     color: $color-dark;
@@ -81,7 +77,7 @@ footer{
 }
 
 .menu{  
-  background-color: $color-background-light;
+  background-color: red;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -60px;
@@ -149,7 +145,8 @@ footer{
   }
   &__subtitle{
     white-space:nowrap;
-    text-overflow: " [...]";    
+    text-overflow: " [...]"; 
+    overflow: hidden;     
   }
   &__validation-box{
     @include flex-center;

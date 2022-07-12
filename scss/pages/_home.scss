@@ -1,9 +1,13 @@
+.header-shadow{  
+  height: 5px;
+  background: linear-gradient(darken($color-background-dark, 15%), $color-background-dark);
+}
+
 .location{
   @include text-size(location);
   @include flex-center;
   background-color: $color-background-dark;
-  padding: 2px;
-      p{
+  p{
     margin: 15px;    
   }
 }
