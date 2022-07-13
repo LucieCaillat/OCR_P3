@@ -4,6 +4,17 @@
 /*MAIN*/
 /*CARD*/
 /*RESPONCIVE*/
+@keyframes rotate {
+  0% {
+    transform: translateX(50px) rotate(100deg);
+  }
+  50% {
+    transform: translateX(25px) rotate(100deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -24,6 +35,252 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 5px #d1d1d1;
+}
+
+.menu-card {
+  display: flex;
+  margin: 15px 0;
+  background-color: white;
+  cursor: pointer;
+}
+.menu-card__text-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 20px;
+  padding: 4%;
+}
+.menu-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px;
+  height: 21px;
+  overflow: hidden;
+}
+.menu-card__price {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 20px;
+}
+.menu-card__subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: "...";
+  white-space: nowrap;
+  transition: width 450ms;
+  width: 70vw;
+}
+@media screen and (min-width: 768px) {
+  .menu-card__subtitle {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card__subtitle {
+    width: 25vw;
+  }
+}
+.menu-card__validation-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  transition: width 450ms;
+}
+.menu-card__validation-box i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #99E2D0;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  transform: rotate(0deg);
+  transition: transform 500ms;
+}
+@media screen and (min-width: 768px) {
+  .menu-card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card {
+    min-width: 450px;
+  }
+}
+
+.radio-toolbar input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+  width: 45vw;
+}
+@media screen and (min-width: 768px) {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+    width: 15vw;
+  }
+}
+.radio-toolbar input:checked + label > .card > .menu-card__validation-box {
+  width: 30%;
+}
+.radio-toolbar input:checked + label > .card > .menu-card__validation-box > i {
+  transform: rotate(360deg);
+}
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+  width: 45vw;
+}
+@media screen and (min-width: 768px) {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+    width: 15vw;
+  }
+}
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box {
+  width: 30%;
+}
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box > i {
+  animation: rotate 500ms forwards;
+}
+
+.card {
+  box-shadow: 0px 4px 5px #d1d1d1;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 40%;
+  max-width: 392px;
+  margin: 19px;
+}
+header i {
+  color: #353535;
+  font-size: 22px;
+  position: relative;
+  right: 300%;
+}
+
+.cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-main {
+  background-color: #f6f6f6;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -60px;
+  padding: 30px 5%;
+}
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.menu h1 i {
+  margin-right: 5%;
+}
+.menu h2 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-top: 30px;
+}
+.menu__underline-title {
+  background-color: #99E2D0;
+  width: 10%;
+  max-width: 60px;
+  height: 3px;
+}
+.menu button {
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 30px;
+}
+
+footer {
+  margin: 0;
+  padding: 5px 0 35px 5%;
+  width: 100%;
+  background-color: #353535;
+  color: white;
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer li {
+  margin: 7px 0;
+}
+footer .fa-utensils {
+  margin-right: 9px;
+  font-size: 15px;
+}
+footer .fa-handshake-angle {
+  margin-right: 7px;
+  font-size: 12px;
+}
+footer a {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 10%;
+    font-size: 30px;
+  }
+  footer a {
+    font-size: 20px;
+  }
 }
 
 .header-shadow {
@@ -174,264 +431,6 @@ a {
 @media screen and (min-width: 992px) {
   .restaurant-card {
     min-width: 450px;
-  }
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header img {
-  width: 40%;
-  max-width: 392px;
-  margin: 19px;
-}
-header i {
-  color: #353535;
-  font-size: 22px;
-  position: relative;
-  right: 300%;
-}
-
-button {
-  font-size: 16px;
-  font-weight: 500;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  cursor: pointer;
-  border: none;
-  padding: 16px 20px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 5px #d1d1d1;
-}
-
-footer {
-  margin: 0;
-  padding: 5px 0 35px 5%;
-  width: 100%;
-  background-color: #353535;
-  color: white;
-}
-footer h4 {
-  font-family: "Shrikhand", cursive;
-}
-footer ul {
-  list-style-type: none;
-  padding: 0px;
-  font-size: 16px;
-  font-weight: 500;
-}
-footer li {
-  margin: 7px 0;
-}
-footer .fa-utensils {
-  margin-right: 9px;
-  font-size: 15px;
-}
-footer .fa-handshake-angle {
-  margin-right: 7px;
-  font-size: 12px;
-}
-footer a {
-  color: white;
-}
-@media screen and (min-width: 768px) {
-  footer {
-    padding-left: 10%;
-    font-size: 30px;
-  }
-  footer a {
-    font-size: 20px;
-  }
-}
-
-.card {
-  box-shadow: 0px 4px 5px #d1d1d1;
-  border-radius: 20px;
-}
-
-.cover {
-  width: 100%;
-  object-fit: cover;
-}
-
-.menu-main {
-  background-color: #f6f6f6;
-}
-
-.menu {
-  background-color: #f6f6f6;
-  border-radius: 40px 40px 0 0;
-  position: relative;
-  top: -60px;
-  padding: 30px 5%;
-}
-.menu h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 26px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-.menu h1 i {
-  margin-right: 5%;
-}
-.menu h2 {
-  font-size: 16px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-  margin-top: 30px;
-}
-.menu__underline-title {
-  background-color: #99E2D0;
-  width: 10%;
-  max-width: 60px;
-  height: 3px;
-}
-.menu button {
-  margin-left: 25%;
-  width: 50%;
-  margin-top: 30px;
-}
-
-.menu-card {
-  display: flex;
-  margin: 15px 0;
-  background-color: white;
-  cursor: pointer;
-}
-.menu-card__text-box {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-radius: 20px;
-  padding: 4%;
-}
-.menu-card h3 {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-  margin-bottom: 5px;
-  height: 21px;
-  overflow: hidden;
-}
-.menu-card__price {
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0 20px;
-}
-.menu-card__subtitle {
-  font-size: 15px;
-  font-weight: 300;
-  margin: 0;
-  overflow: hidden;
-  text-overflow: "...";
-  white-space: nowrap;
-  transition: width 450ms;
-  width: 70vw;
-}
-@media screen and (min-width: 768px) {
-  .menu-card__subtitle {
-    width: 50vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu-card__subtitle {
-    width: 25vw;
-  }
-}
-.menu-card__validation-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  overflow: hidden;
-  transition: width 450ms;
-}
-.menu-card__validation-box i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #99E2D0;
-  font-size: 15px;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  transform: rotate(0deg);
-  transition: transform 500ms;
-}
-@media screen and (min-width: 768px) {
-  .menu-card {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu-card {
-    min-width: 450px;
-  }
-}
-
-.radio-toolbar input {
-  opacity: 0;
-  position: fixed;
-  width: 0;
-}
-.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
-  width: 45vw;
-}
-@media screen and (min-width: 768px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
-    width: 30vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
-    width: 15vw;
-  }
-}
-.radio-toolbar input:checked + label > .card > .menu-card__validation-box {
-  width: 30%;
-}
-.radio-toolbar input:checked + label > .card > .menu-card__validation-box > i {
-  transform: rotate(360deg);
-}
-.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
-  width: 45vw;
-}
-@media screen and (min-width: 768px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
-    width: 30vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
-    width: 15vw;
-  }
-}
-.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box {
-  width: 30%;
-}
-.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box > i {
-  animation: rotate 500ms forwards;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translateX(50px) rotate(100deg);
-  }
-  50% {
-    transform: translateX(25px) rotate(100deg);
-  }
-  100% {
-    transform: translateX(0) rotate(360deg);
   }
 }
 

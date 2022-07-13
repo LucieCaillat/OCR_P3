@@ -1,0 +1,14 @@
+header{
+  @include flex-center;   
+  img{
+    width: 40%;
+    max-width: 392px;
+    margin: 19px;
+  }
+  i{
+    color: $color-dark;
+    font-size: 22px;
+    position: relative;
+    right: 300%;
+  }
+}

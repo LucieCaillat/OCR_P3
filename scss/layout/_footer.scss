@@ -1,0 +1,37 @@
+footer{
+  margin: 0;
+  padding: 5px 0 35px nth($padding-main, 2);
+  width: 100%;
+  background-color: $color-dark;
+  color: $color-white;
+  h4{
+    font-family: 'Shrikhand', cursive;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0px;
+    @include text-size(footer);
+  }
+  li{
+    margin: 7px 0;
+  }
+  
+  .fa-utensils{
+    margin-right: 9px;
+    font-size: 15px;
+  }
+  .fa-handshake-angle{
+    margin-right: 7px;
+    font-size: 12px;
+  }
+  a{
+    color: $color-white;
+  }
+  @include tablet{
+    padding-left: 10%;
+    font-size: 30px;
+    a{
+      font-size: 20px;
+    }
+  }
+}

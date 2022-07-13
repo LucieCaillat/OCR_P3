@@ -1,0 +1,44 @@
+.cover{
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-main{
+  background-color: $color-background-light;
+}
+
+.menu{  
+  background-color: $color-background-light;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -60px;
+  padding: $padding-main;
+  h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    i{
+      margin-right: 5%;
+    }
+  }
+  h2{
+    @include text-size(menu-title);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    margin-top: 30px;
+  }
+  &__underline-title{
+    background-color: $color-tertiary;
+    width: 10%;
+    max-width: 60px;
+    height: 3px;
+  }
+  button{
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 30px;
+  }  
+}
+

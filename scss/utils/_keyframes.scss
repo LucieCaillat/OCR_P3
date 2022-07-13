@@ -1,0 +1,12 @@
+@keyframes rotate{
+  0%{
+    transform: translateX(50px) rotate(100deg);
+    
+  }
+  50%{
+    transform: translateX(25px) rotate(100deg);
+  }
+  100%{
+    transform: translateX(0) rotate(360deg);
+    }
+}
