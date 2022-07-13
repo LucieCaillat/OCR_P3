@@ -19,18 +19,15 @@
       <img class="logo" src="images/logo/ohmyfood.png" alt="logo de ohmyfood" />
     </header>
 
-    <main>
+    <main class="menu-main">
           <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût" class="cover"> 
           <article class="menu">
             <h1><span>La palette du goût </span><i class="fa-regular fa-heart"></i></h1>
             <h2>Entrées</h2>
-            <div class="menu__underline-title"></div>
-            
+            <div class="menu__underline-title"></div>                       
 
-
-
-            <div class="checkbox">
-              <input type="checkbox" id="1" name="radioFruit" value="apple" >
+            <div class="radio-toolbar">
+              <input type="radio" id="1" name="starter" value="1" >
               <label for="1">
                 <div class="card menu-card">
                   <div class="menu-card__text-box">
@@ -44,11 +41,9 @@
                     <i class="fa-solid fa-check"></i>
                   </div>    
                 </div>
-              </label>                
-            </div>
-
-            <div class="checkbox">
-              <input type="checkbox" id="2" name="radioFruit" value="apple" >
+              </label> 
+              
+              <input type="radio" id="2" name="starter" value="2" >
               <label for="2">
                 <div class="card menu-card">
                   <div class="menu-card__text-box">
@@ -56,17 +51,15 @@
                       <h3>Foie gras de canard mi-cuit</h3>
                       <p class="menu-card__subtitle">Et ses copeaux de truffe noire</p>                
                     </div>
-                    <p class="menu-card__price">25€</p>
+                    <p class="menu-card__price">35€</p>
                   </div>    
                   <div class="menu-card__validation-box">
                     <i class="fa-solid fa-check"></i>
                   </div>    
                 </div>
-              </label>                
-            </div>
+              </label>
 
-            <div class="checkbox">
-              <input type="checkbox" id="3" name="radioFruit" value="apple" >
+              <input type="radio" id="3" name="starter" value="3" >
               <label for="3">
                 <div class="card menu-card">
                   <div class="menu-card__text-box">
@@ -74,99 +67,121 @@
                       <h3>Oeuf au plat</h3>
                       <p class="menu-card__subtitle">Assaisonné sur un lit de roquette</p>                
                     </div>
-                    <p class="menu-card__price">25€</p>
+                    <p class="menu-card__price">20€</p>
                   </div>    
                   <div class="menu-card__validation-box">
                     <i class="fa-solid fa-check"></i>
                   </div>    
                 </div>
-              </label>                
+              </label> 
             </div>
-
-
 
             <h2>Plats</h2>
             <div class="menu__underline-title"></div>
             
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-            </div>
+            <div class="radio-toolbar">
+              <input type="radio" id="4" name="dish" value="4" >
+              <label for="4">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Filet de boeuf aux herbes</h3>
+                      <p class="menu-card__subtitle">Acompagné de sa ribambelle de légumes</p>                
+                    </div>
+                    <p class="menu-card__price">40€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+              
+              <input type="radio" id="5" name="dish" value="5" >
+              <label for="5">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Parmentier de queue de boeuf</h3>
+                      <p class="menu-card__subtitle">À la truffe noire sur sa purée de panais</p>                
+                    </div>
+                    <p class="menu-card__price">35€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
 
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-            </div>
+              <input type="radio" id="6" name="dish" value="6" >
+              <label for="6">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Filet de Turbot</h3>
+                      <p class="menu-card__subtitle">Aux agrumes</p>                
+                    </div>
+                    <p class="menu-card__price">44€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
 
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
             </div>
 
             <h2>Desserts</h2>
             <div class="menu__underline-title"></div>
             
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-            </div>
+            <div class="radio-toolbar">
+              <input type="radio" id="7" name="dessert" value="7" >
+              <label for="7">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Paris-Brest</h3>
+                      <p class="menu-card__subtitle">Revisité</p>                
+                    </div>
+                    <p class="menu-card__price">18€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+              
+              <input type="radio" id="8" name="dessert" value="8" >
+              <label for="8">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Macaron au chocolat d'excetion</h3>
+                      <p class="menu-card__subtitle">Et glace à la vanille de Madagascar</p>                
+                    </div>
+                    <p class="menu-card__price">22€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
 
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-            </div>
+              <input type="radio" id="9" name="dessert" value="9" >
+              <label for="9">
+                <div class="card menu-card">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Mousse au chocolat</h3>
+                      <p class="menu-card__subtitle">Au piment d'espelette et à la truffe noire</p>                
+                    </div>
+                    <p class="menu-card__price">23€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
 
-            <div class="card menu-card">
-              <div class="menu-card__text-box">
-                <h3>Fricassée d'escargot</h3>
-              <p>
-                <span>Au piment d'espelette</span>
-                <span class="menu-card__price">25€</span>
-              </p>
-              </div>
-              <div class="menu-card__validation-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
             </div>
 
             <button>Commander</button>

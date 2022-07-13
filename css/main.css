@@ -256,6 +256,10 @@ footer a {
   object-fit: cover;
 }
 
+.menu-main {
+  background-color: #f6f6f6;
+}
+
 .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -375,47 +379,47 @@ footer a {
   }
 }
 
-.checkbox input {
+.radio-toolbar input {
   opacity: 0;
   position: fixed;
   width: 0;
 }
-.checkbox input:checked + label > .card > .menu-card__text-box > div > p {
+.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .checkbox input:checked + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .checkbox input:checked + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
     width: 15vw;
   }
 }
-.checkbox input:checked + label > .card > .menu-card__validation-box {
+.radio-toolbar input:checked + label > .card > .menu-card__validation-box {
   width: 30%;
 }
-.checkbox input:checked + label > .card > .menu-card__validation-box > i {
+.radio-toolbar input:checked + label > .card > .menu-card__validation-box > i {
   transform: rotate(360deg);
 }
-.checkbox input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .checkbox input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .checkbox input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
     width: 15vw;
   }
 }
-.checkbox input:not(:checked):hover + label > .card > .menu-card__validation-box {
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box {
   width: 30%;
 }
-.checkbox input:not(:checked):hover + label > .card > .menu-card__validation-box > i {
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__validation-box > i {
   animation: rotate 500ms forwards;
 }
 

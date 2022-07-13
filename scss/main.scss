@@ -77,6 +77,10 @@ footer{
   object-fit: cover;
 }
 
+.menu-main{
+  background-color: $color-background-light;
+}
+
 .menu{  
   background-color: $color-background-light;
   border-radius: 40px 40px 0 0;
@@ -182,7 +186,7 @@ footer{
   
 }
 
-.checkbox{
+.radio-toolbar{
   input{
     opacity: 0;
     position: fixed;
