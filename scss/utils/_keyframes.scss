@@ -10,3 +10,12 @@
     transform: translateX(0) rotate(360deg);
     }
 }
+
+@keyframes heart{
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

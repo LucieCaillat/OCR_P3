@@ -1,0 +1,56 @@
+
+.heart{
+  display:block;
+  position: relative;
+  width: 35px;  
+  z-index: 1; 
+  text-align: center;  
+
+  input[type="checkbox"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    
+    &:checked + label{
+      > .fa-regular{
+        opacity: 0;
+        animation: heart 200ms;        
+      }
+      > .fa-solid{
+          opacity: 1;
+          animation: heart 200ms;
+      }
+    }
+    &:hover + label{
+      > .fa-regular{
+        opacity: 0;
+      }
+      > .fa-solid{
+          opacity: 1;          
+      }
+    }
+  }
+
+  .fa-regular{
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 300ms;
+    cursor: pointer;
+  }
+  .fa-solid{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    left: 0;
+    //color gradient
+    background: linear-gradient($color-secondary, $color-primary);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //
+    z-index: -1;
+    opacity: 0;        
+    transition: opacity 200ms;
+  }
+}
