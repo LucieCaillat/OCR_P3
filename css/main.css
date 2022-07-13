@@ -306,12 +306,6 @@ footer a {
   border-radius: 20px;
   padding: 4%;
 }
-.menu-card__text-box:hover + .menu-card__validation-box {
-  width: 30%;
-}
-.menu-card__text-box:hover + .menu-card__validation-box i {
-  transform: rotate(360deg);
-}
 .menu-card h3 {
   font-size: 18px;
   font-weight: 500;
@@ -353,7 +347,7 @@ footer a {
   height: 20px;
   border-radius: 20px;
   transform: rotate(0deg);
-  transition: transforme 450ms;
+  transition: transform 500ms;
 }
 @media screen and (min-width: 768px) {
   .menu-card {
@@ -375,6 +369,27 @@ footer a {
 }
 .checkbox input:checked + label > .card > .menu-card__validation-box {
   width: 30%;
+}
+.checkbox input:checked + label > .card > .menu-card__validation-box > i {
+  transform: rotate(360deg);
+}
+.checkbox input:not(:checked):hover + label > .card > .menu-card__validation-box {
+  width: 30%;
+}
+.checkbox input:not(:checked):hover + label > .card > .menu-card__validation-box > i {
+  animation: rotate 500ms forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(50px) rotate(100deg);
+  }
+  50% {
+    transform: translateX(25px) rotate(100deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
