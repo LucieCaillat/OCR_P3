@@ -131,6 +131,8 @@ footer{
     @include text-size(menu-card__title);
     margin: 0;
     margin-bottom: 5px;
+    height: 21px;
+    overflow: hidden;
   }
   &__price{
     @include text-size(menu-card__price);
@@ -138,11 +140,12 @@ footer{
   }
   &__subtitle{
     @include text-size(menu-card__subtitle);    
-    margin: 0;
-    /*
+    margin: 0;     
     overflow: hidden;
+    text-overflow: "...";     
     white-space: nowrap;
-    text-overflow: "...";*/          
+    transition: width 450ms;
+    @include width-card__subtitle (large);               
   }
 
   &__validation-box{
@@ -184,18 +187,33 @@ footer{
     opacity: 0;
     position: fixed;
     width: 0;   
-    &:checked + label > .card > .menu-card__validation-box{
-      width: 30%;  
-      > i{
-        transform: rotate(360deg);
-      }    
-    }
-    &:not(:checked):hover + label > .card > .menu-card__validation-box{
-      width: 30%;
-      > i{
-        animation: rotate 500ms forwards;
+    &:checked + label > .card{ 
+      > .menu-card__text-box > div{
+        > p{
+          @include width-card__subtitle (small);
+        }
       }
-    } 
+      > .menu-card__validation-box{
+        width: 30%;  
+        > i{
+          transform: rotate(360deg);
+        }    
+      }
+    }
+    &:not(:checked):hover + label > .card {
+      > .menu-card__text-box > div{
+        > p{
+          @include width-card__subtitle (small);
+          
+        }
+      }
+      > .menu-card__validation-box{
+        width: 30%;
+        > i{
+          animation: rotate 500ms forwards;
+        }
+      } 
+    }
   }
 }
 

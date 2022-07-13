@@ -25,3 +25,14 @@
 @mixin shadow {
   box-shadow: 0px 4px 5px darken($color-background-dark, 10%); 
 }
+
+@mixin width-card__subtitle ($subtitle-type) {
+  $type : map-get($width-card__subtitle, $subtitle-type);
+  width: map-get($type, cell-phone);      
+  @include tablet{
+    width: map-get($type, tablet);
+  }
+  @include desktop-only{
+    width: map-get($type, desktop) ;
+  }
+}

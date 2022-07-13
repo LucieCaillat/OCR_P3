@@ -74,10 +74,25 @@ $padding-main: 30px 5% ;
 $card-border-radius: 20px;
 $validation-box__i-size_circle: 20px;
 
+$width-card__subtitle: (
+  large: (
+    cell-phone: 70vw,
+    tablet: 50vw,
+    desktop: 25vw
+  ),
+  small: (
+    cell-phone: 45vw,
+    tablet: 30vw,
+    desktop: 15vw
+  )
+);
+
 /*RESPONCIVE*/
 
 $width-main-for-tablet: 70%;
 $min-width-main-for-desktop: 450px;
+
+
 
 
 
