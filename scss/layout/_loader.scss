@@ -1,0 +1,45 @@
+.loader{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;  
+  left: 0;
+  background-color:rgba($color: $color-primary, $alpha: 0.9);
+  animation: disappearing 500ms $loader-anim-dur forwards;
+  @include flex-center;  
+  font-family: 'Shrikhand', cursive;
+  font-size: 5vw; 
+  &-box{
+    @include flex-center;
+    flex-direction: column;
+    width: 9vw;
+    &__letter{
+      margin-bottom: 0.5vw;
+      display: block;
+      transform-origin: bottom;
+      animation: letter-shake $loader-timing/4 infinite;
+    }
+    &--1 .loader-box__letter{
+      transform-origin: bottom;
+      animation: letter-jump $loader-timing infinite;
+      
+    }
+
+    &--8 .loader-box__letter{
+      animation: letter-jump $loader-timing $loader-timing/2 infinite;
+    }
+
+    &__suport{
+      height: 5vw;
+      width: 100%;   
+      background-color: $color-secondary;
+    }
+    
+    @for $i from 1 through 8{
+      &--#{$i}{
+        animation: loader-translate-y--#{$i} $loader-timing infinite;       
+      }
+    }
+  } 
+}
