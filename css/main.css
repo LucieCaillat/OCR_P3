@@ -17,6 +17,17 @@
     transform: translateX(0) rotate(360deg);
   }
 }
+@keyframes card-apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+    animation-timing-function: cubic-bezier(0.01, 0.86, 0.37, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 /*HEART*/
 @keyframes heart {
   50% {
@@ -394,6 +405,38 @@ button {
   transform: rotate(0deg);
   transition: transform 500ms;
 }
+.menu-card--1 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.2s;
+}
+.menu-card--2 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.4s;
+}
+.menu-card--3 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.6s;
+}
+.menu-card--4 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.8s;
+}
+.menu-card--5 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4s;
+}
+.menu-card--6 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.2s;
+}
+.menu-card--7 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.4s;
+}
+.menu-card--8 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.6s;
+}
 @media screen and (min-width: 768px) {
   .menu-card {
     width: 70%;
@@ -565,7 +608,7 @@ footer a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(147, 86, 220, 0.9);
+  background-color: rgba(147, 86, 220, 0.95);
   animation: disappearing 500ms 3s forwards;
   display: flex;
   justify-content: center;
@@ -677,6 +720,38 @@ footer a {
   height: 65px;
   margin: 30px auto;
   background-color: #f6f6f6;
+}
+.functioning-card--1 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.2s;
+}
+.functioning-card--2 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.4s;
+}
+.functioning-card--3 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.6s;
+}
+.functioning-card--4 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 3.8s;
+}
+.functioning-card--5 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4s;
+}
+.functioning-card--6 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.2s;
+}
+.functioning-card--7 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.4s;
+}
+.functioning-card--8 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.6s;
 }
 .functioning-card__nbr {
   position: absolute;

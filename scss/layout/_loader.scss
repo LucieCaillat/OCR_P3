@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;  
   left: 0;
-  background-color:rgba($color: $color-primary, $alpha: 0.9);
+  background-color:rgba($color: $color-primary, $alpha: 0.95);
   animation: disappearing 500ms $loader-anim-dur forwards;
   @include flex-center;  
   font-family: 'Shrikhand', cursive;

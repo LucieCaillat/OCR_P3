@@ -53,10 +53,16 @@
       transform: rotate(0deg);
       transition: transform 500ms;         
     }
-
-
-    //RESPONSIVE
-  }      
+  }
+  @for $i from 1 to 9 {
+    &--#{$i}{
+      animation: card-apparition 1000ms backwards;
+      animation-delay: $loader-anim-dur + 200ms * $i;
+      
+    }
+    
+  }
+    //RESPONSIVE        
   @include tablet{
     width: $width-main-for-tablet;
     margin-left: auto;

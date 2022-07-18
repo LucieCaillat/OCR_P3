@@ -41,7 +41,14 @@
     width: 90%;
     height: 65px;    
     margin: 30px auto;
-    background-color: $color-background-light;      
+    background-color: $color-background-light; 
+    @for $i from 1 to 9 {
+      &--#{$i}{
+        animation: card-apparition 1000ms backwards;
+        animation-delay: $loader-anim-dur + 200ms * $i;
+        
+      }
+    }     
     &__nbr{
       position: absolute;
       left: -7px;
