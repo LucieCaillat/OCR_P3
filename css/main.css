@@ -437,6 +437,14 @@ button {
   animation: card-apparition 1000ms backwards;
   animation-delay: 4.6s;
 }
+.menu-card--9 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 4.8s;
+}
+.menu-card--10 {
+  animation: card-apparition 1000ms backwards;
+  animation-delay: 5s;
+}
 @media screen and (min-width: 768px) {
   .menu-card {
     width: 70%;
@@ -518,6 +526,7 @@ header i {
 
 .cover {
   width: 100%;
+  height: 280px;
   object-fit: cover;
 }
 

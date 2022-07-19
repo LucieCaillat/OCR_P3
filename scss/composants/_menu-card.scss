@@ -54,7 +54,7 @@
       transition: transform 500ms;         
     }
   }
-  @for $i from 1 to 9 {
+  @for $i from 1 to 11 {
     &--#{$i}{
       animation: card-apparition 1000ms backwards;
       animation-delay: $loader-anim-dur + 200ms * $i;
