@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />  
+    <title>ohmyfood</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <img class="logo" src="images/logo/ohmyfood.png" alt="logo de ohmyfood" />
+    </header>
+
+    <main class="menu-main">
+          <img src="images/restaurants/la_note_enchantee.jpg" alt="La note enchantée" class="cover"> 
+          <article class="menu">
+            <h1>
+              <span>La note enchantée</span>
+              <span class="heart">
+                <input type="checkbox" id="radioheart" name="radioheart" value="like" >
+                <label for="radioheart">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </label>                
+              </span>
+            </h1>
+
+
+            <h2>Entrées</h2>
+            <div class="menu__underline-title"></div>                       
+
+            <div class="radio-toolbar">
+              <input type="radio" id="1" name="starter" value="1" >
+              <label for="1">
+                <div class="card menu-card menu-card--1">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Ravioles de foie gras</h3>
+                      <p class="menu-card__subtitle">Accompagnés de leur crème à la truffe</p>                
+                    </div>
+                    <p class="menu-card__price">25€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+              
+              <input type="radio" id="2" name="starter" value="2" >
+              <label for="2">
+                <div class="card menu-card menu-card--2">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Caviar osciètre</h3>
+                      <p class="menu-card__subtitle">Sur blini à la farine de blé noir</p>                
+                    </div>
+                    <p class="menu-card__price">35€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
+
+              <input type="radio" id="3" name="starter" value="3" >
+              <label for="3">
+                <div class="card menu-card menu-card--3">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Homard et espuma de crevettes</h3>
+                      <p class="menu-card__subtitle">Mariné aux zests d'orange</p>                
+                    </div>
+                    <p class="menu-card__price">20€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
+              
+              <input type="radio" id="4" name="starter" value="4" >
+              <label for="4">
+                <div class="card menu-card menu-card--4">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Foie gras de canard cuit entier</h3>
+                      <p class="menu-card__subtitle">Confiture de figue et pain toasté</p>                
+                    </div>
+                    <p class="menu-card__price">35€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
+            </div>
+
+            <h2>Plats</h2>
+            <div class="menu__underline-title"></div>
+            
+            <div class="radio-toolbar">
+              <input type="radio" id="5" name="dish" value="5" >
+              <label for="5">
+                <div class="card menu-card menu-card--5">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Noix de coquilles Saint-Jacques</h3>
+                      <p class="menu-card__subtitle">Sur lit de purée de céleri-rave</p>                
+                    </div>
+                    <p class="menu-card__price">40€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+              
+              <input type="radio" id="6" name="dish" value="6" >
+              <label for="6">
+                <div class="card menu-card menu-card--6">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Langoustine poêlée</h3>
+                      <p class="menu-card__subtitle">Purée de patate douce</p>                
+                    </div>
+                    <p class="menu-card__price">35€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
+
+              <input type="radio" id="7" name="dish" value="7" >
+              <label for="7">
+                <div class="card menu-card menu-card--7">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Mijoté de queue de boeuf</h3>
+                      <p class="menu-card__subtitle">Et riz sauvage aux zests de citron</p>                
+                    </div>
+                    <p class="menu-card__price">44€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+
+            </div>
+
+            <h2>Desserts</h2>
+            <div class="menu__underline-title"></div>
+            
+            <div class="radio-toolbar">
+              <input type="radio" id="8" name="dessert" value="8" >
+              <label for="8">
+                <div class="card menu-card menu-card--8">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Macaron noisette et chocolat</h3>
+                      <p class="menu-card__subtitle">glace au caramel brun et sel de Guérande</p>                
+                    </div>
+                    <p class="menu-card__price">18€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+              
+              <input type="radio" id="9" name="dessert" value="9" >
+              <label for="9">
+                <div class="card menu-card menu-card--9">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Baba au rhum revisité</h3>
+                      <p class="menu-card__subtitle">Avec son coulis de citron</p>                
+                    </div>
+                    <p class="menu-card__price">22€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label>
+
+              <input type="radio" id="10" name="dessert" value="10" >
+              <label for="10">
+                <div class="card menu-card menu-card--10">
+                  <div class="menu-card__text-box">
+                    <div>
+                      <h3>Tarte au citron meringuée</h3>
+                      <p class="menu-card__subtitle">Destructurée</p>                
+                    </div>
+                    <p class="menu-card__price">23€</p>
+                  </div>    
+                  <div class="menu-card__validation-box">
+                    <i class="fa-solid fa-check"></i>
+                  </div>    
+                </div>
+              </label> 
+
+            </div>
+
+            <button>Commander</button>
+
+          </article>
+
+    </main>
+
+    <footer>
+      <h4>ohmyfood</h4>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+
+    <div class="loader">
+      <div class="loader-box loader-box--1">
+        <span class="loader-box__letter">o</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--2">
+        <span class="loader-box__letter">h</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--3">
+        <span class="loader-box__letter">m</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--4">
+        <span class="loader-box__letter">y</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--5">
+        <span class="loader-box__letter">f</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--6">
+        <span class="loader-box__letter">o</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--7">
+        <span class="loader-box__letter">o</span>
+        <div class="loader-box__suport"></div>
+      </div>
+      <div class="loader-box loader-box--8">
+        <span class="loader-box__letter">d</span>
+        <div class="loader-box__suport"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
