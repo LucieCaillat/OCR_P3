@@ -6,5 +6,10 @@ button{
   border: none;
   padding: 16px 20px;
   border-radius: 30px;
-  @include shadow;    
+  @include shadow;
+  transition: all 250ms ;
+  &:hover {
+    box-shadow: -1px 3px 6px darken($color-background-dark, 50%);
+    opacity: 0.9;
+  }   
 }
