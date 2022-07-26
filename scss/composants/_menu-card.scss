@@ -61,7 +61,7 @@
   @for $i from 1 to 11 {
     &--#{$i}{
       animation: card-apparition 1000ms backwards;
-      animation-delay: $loader-anim-dur + 200ms * $i;
+      animation-delay: 200ms * $i;
       
     }
     

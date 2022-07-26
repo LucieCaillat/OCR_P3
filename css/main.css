@@ -425,43 +425,43 @@ button:hover {
 }
 .menu-card--1 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 3.2s;
+  animation-delay: 200ms;
 }
 .menu-card--2 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 3.4s;
+  animation-delay: 400ms;
 }
 .menu-card--3 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 3.6s;
+  animation-delay: 600ms;
 }
 .menu-card--4 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 3.8s;
+  animation-delay: 800ms;
 }
 .menu-card--5 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 4s;
+  animation-delay: 1000ms;
 }
 .menu-card--6 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 4.2s;
+  animation-delay: 1200ms;
 }
 .menu-card--7 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 4.4s;
+  animation-delay: 1400ms;
 }
 .menu-card--8 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 4.6s;
+  animation-delay: 1600ms;
 }
 .menu-card--9 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 4.8s;
+  animation-delay: 1800ms;
 }
 .menu-card--10 {
   animation: card-apparition 1000ms backwards;
-  animation-delay: 5s;
+  animation-delay: 2000ms;
 }
 @media screen and (min-width: 768px) {
   .menu-card {
