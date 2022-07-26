@@ -354,8 +354,21 @@ button {
   font-weight: 500;
   margin: 0;
   margin-bottom: 5px;
-  height: 21px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: width 450ms;
+  width: 70vw;
+}
+@media screen and (min-width: 768px) {
+  .menu-card h3 {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card h3 {
+    width: 25vw;
+  }
 }
 .menu-card__price {
   font-size: 15px;
@@ -367,7 +380,7 @@ button {
   font-weight: 300;
   margin: 0;
   overflow: hidden;
-  text-overflow: "...";
+  text-overflow: ellipsis;
   white-space: nowrap;
   transition: width 450ms;
   width: 70vw;
@@ -476,6 +489,19 @@ button {
     width: 15vw;
   }
 }
+.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+  width: 45vw;
+}
+@media screen and (min-width: 768px) {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+    width: 15vw;
+  }
+}
 .radio-toolbar input:checked + label > .card > .menu-card__validation-box {
   width: 30%;
 }
@@ -492,6 +518,19 @@ button {
 }
 @media screen and (min-width: 992px) {
   .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+    width: 15vw;
+  }
+}
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
+  width: 45vw;
+}
+@media screen and (min-width: 768px) {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
     width: 15vw;
   }
 }

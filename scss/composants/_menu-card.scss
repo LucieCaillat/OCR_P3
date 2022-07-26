@@ -17,8 +17,12 @@
     @include text-size(menu-card__title);
     margin: 0;
     margin-bottom: 5px;
-    height: 21px;
+    //height: 21px;
     overflow: hidden;
+    text-overflow: ellipsis;     
+    white-space: nowrap;
+    transition: width 450ms;
+    @include width-card__text (large);  
   }
   &__price{
     @include text-size(menu-card__price);
@@ -28,10 +32,10 @@
     @include text-size(menu-card__subtitle);    
     margin: 0;     
     overflow: hidden;
-    text-overflow: "...";     
+    text-overflow: ellipsis;     
     white-space: nowrap;
     transition: width 450ms;
-    @include width-card__subtitle (large);               
+    @include width-card__text (large);               
   }
 
   &__validation-box{
@@ -82,7 +86,10 @@
     &:checked + label > .card{ 
       > .menu-card__text-box > div{
         > p{
-          @include width-card__subtitle (small);
+          @include width-card__text (small);
+        }
+        >h3{
+          @include width-card__text (small);
         }
       }
       > .menu-card__validation-box{
@@ -95,8 +102,11 @@
     &:not(:checked):hover + label > .card {
       > .menu-card__text-box > div{
         > p{
-          @include width-card__subtitle (small);
+          @include width-card__text (small);
           
+        }
+        >h3{
+          @include width-card__text (small);
         }
       }
       > .menu-card__validation-box{

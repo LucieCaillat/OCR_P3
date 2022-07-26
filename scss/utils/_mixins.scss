@@ -26,8 +26,8 @@
   box-shadow: 0px 4px 5px darken($color-background-dark, 10%); 
 }
 
-@mixin width-card__subtitle ($subtitle-type) {
-  $type : map-get($width-card__subtitle, $subtitle-type);
+@mixin width-card__text ($text-type) {
+  $type : map-get($width-card__text, $text-type);
   width: map-get($type, cell-phone);      
   @include tablet{
     width: map-get($type, tablet);
