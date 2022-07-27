@@ -13,7 +13,8 @@
     padding: 4%;              
   }
 
-  h3{
+  &__title{
+    display: block;
     @include text-size(menu-card__title);
     margin: 0;
     margin-bottom: 5px;
@@ -29,6 +30,7 @@
     margin: 0 20px;           
   }
   &__subtitle{
+    display: block;
     @include text-size(menu-card__subtitle);    
     margin: 0;     
     overflow: hidden;
@@ -84,11 +86,11 @@
     position: fixed;
     width: 0;   
     &:checked + label > .card{ 
-      > .menu-card__text-box > div{
-        > p{
+      > .menu-card__text-box > span{
+        > .menu-card__title{
           @include width-card__text (small);
         }
-        >h3{
+        >.menu-card__subtitle{
           @include width-card__text (small);
         }
       }
@@ -100,12 +102,12 @@
       }
     }
     &:not(:checked):hover + label > .card {
-      > .menu-card__text-box > div{
-        > p{
+      > .menu-card__text-box > span{
+        > .menu-card__title{
           @include width-card__text (small);
           
         }
-        >h3{
+        >.menu-card__subtitle{
           @include width-card__text (small);
         }
       }

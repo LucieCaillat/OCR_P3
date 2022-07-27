@@ -354,7 +354,8 @@ a {
   border-radius: 20px;
   padding: 4%;
 }
-.menu-card h3 {
+.menu-card__title {
+  display: block;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
@@ -366,12 +367,12 @@ a {
   width: 70vw;
 }
 @media screen and (min-width: 768px) {
-  .menu-card h3 {
+  .menu-card__title {
     width: 50vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu-card h3 {
+  .menu-card__title {
     width: 25vw;
   }
 }
@@ -381,6 +382,7 @@ a {
   margin: 0 20px;
 }
 .menu-card__subtitle {
+  display: block;
   font-size: 15px;
   font-weight: 300;
   margin: 0;
@@ -481,29 +483,29 @@ a {
   position: fixed;
   width: 0;
 }
-.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+.radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__title {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__title {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__title {
     width: 15vw;
   }
 }
-.radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+.radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .radio-toolbar input:checked + label > .card > .menu-card__text-box > div > h3 {
+  .radio-toolbar input:checked + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
     width: 15vw;
   }
 }
@@ -513,29 +515,29 @@ a {
 .radio-toolbar input:checked + label > .card > .menu-card__validation-box > i {
   transform: rotate(360deg);
 }
-.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__title {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__title {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > p {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__title {
     width: 15vw;
   }
 }
-.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
+.radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
   width: 45vw;
 }
 @media screen and (min-width: 768px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
     width: 30vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > div > h3 {
+  .radio-toolbar input:not(:checked):hover + label > .card > .menu-card__text-box > span > .menu-card__subtitle {
     width: 15vw;
   }
 }
