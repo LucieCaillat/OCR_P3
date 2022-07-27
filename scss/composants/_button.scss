@@ -1,4 +1,4 @@
-button{
+.button{
   @include text-size(btn);
   background: linear-gradient($color-secondary, $color-primary);
   color: $color-white;
